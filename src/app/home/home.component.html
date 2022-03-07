@@ -1,7 +1,30 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
+<div class="container-custom">
+  <mat-icon svgIcon="thumbs-up" ></mat-icon>
+  <mat-icon >home</mat-icon>
 
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+  <main-theme class="block">
+    <div class="heading-name ">
+      <h1 class="heading-name-h1" contenteditable="true">Opponent</h1>
+    </div>
+    <div class="heading-image">
+      <h1 class="heading-image-h1 text-center"><b>Opponent Logo</b></h1>
+      <hr class="heading-image-hr">
+    </div>
+  </main-theme>
+  <custom-date>
+    <h6 contenteditable="true" class="custom-date-h6 ">Date - Time - City - State</h6>
+    <h6 contenteditable="true" class="custom-date-number ">0-0 (0-0)</h6>
+  </custom-date>
+  <image-section>
+    <input type="file" #imgupload [hidden]="true" (change)="getImage($event)" />
+    <img class="left-image" (click)="imgUpload()" src="{{initialFirstImage}}">
+    <input type="file" #imgupload2 [hidden]="true" (change)="getSecondImage($event)" />
+    <img class="right-image" (click)="imgSecondUpload()" src="{{initialSecondImage}}">
+  </image-section>
+
+
+
+
+
+  <!-- <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a> -->
 </div>

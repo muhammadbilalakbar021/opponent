@@ -26,7 +26,7 @@
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "ng": "ng",
-    "start": "npm-run-all -p electron:serve ng:serve",
+    "start": "npm-run-all -p ng:serve",
     "ng:serve": "ng serve -c web -o",
     "build": "npm run electron:serve-tsc && ng build --base-href ./",
     "build:dev": "npm run build -- -c dev",
@@ -45,14 +45,18 @@
     "lint": "ng lint"
   },
   "dependencies": {
+    "@angular/animations": "13.2.4",
+    "@angular/cdk": "13.2.5",
     "@angular/common": "13.2.4",
     "@angular/compiler": "13.2.4",
     "@angular/core": "13.2.4",
     "@angular/forms": "13.2.4",
     "@angular/language-service": "13.2.4",
+    "@angular/material": "13.2.5",
     "@angular/platform-browser": "13.2.4",
     "@angular/platform-browser-dynamic": "13.2.4",
     "@angular/router": "13.2.4",
+    "@fortawesome/angular-fontawesome": "0.10.1",
     "rxjs": "7.5.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"

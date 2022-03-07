@@ -1,0 +1,70 @@
+:host {
+}
+
+.block {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.heading-name {
+  margin-top: 10%;
+  height: 200px;
+  width: 80% !important;
+  background-color: black;
+}
+
+.heading-name-h1 {
+  margin-top: 5%;
+  color: whitesmoke;
+  text-align: right;
+  margin-right: 5%;
+  font-size: 80px;
+}
+
+.heading-image {
+  margin-top: 10%;
+  margin-left: 2%;
+  height: 200px;
+  width: 400px;
+  background-color: whitesmoke;
+}
+
+.heading-image-h1 {
+  margin-top: 15%;
+  color: red;
+  text-align: right;
+  margin-right: 5%;
+  font-size: 25px;
+}
+
+.heading-image-hr {
+  border-top: 2px solid orange;
+}
+
+.custom-date-h6 {
+  color: whitesmoke;
+  margin-left: 25%;
+  font-size: 25px;
+  margin-top: 1%;
+}
+.custom-date-number {
+  color: whitesmoke;
+  margin-left: 85%;
+  margin-top: -3%;
+  font-size: 25px;
+}
+
+.left-image {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  height: 200px;
+  width: 200px;
+}
+.right-image {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 200px;
+  width: 200px;
+}
